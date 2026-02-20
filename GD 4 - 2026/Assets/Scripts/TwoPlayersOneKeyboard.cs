@@ -31,8 +31,6 @@ public class TwoPlayersOneKeyboard : MonoBehaviour
 		p1Jump.action.Enable();
 		p2Jump.action.Enable();
 
-		//p1Jump.action.performed += Jump;
-		//p2Jump.action.performed += Jump;
 	}
 
 	private void OnDisable()
@@ -60,7 +58,6 @@ public class TwoPlayersOneKeyboard : MonoBehaviour
 
 		if (p1)	p1.position += new Vector3(m1.x, 0f, m1.y) * speed * Time.deltaTime;
 		if(player1) p1.position += new Vector3(0f, j1, 0f) * jumpHeight * Time.deltaTime;
-
 
 		if (p2) p2.position += new Vector3(m2.x, 0f, m2.y) * speed * Time.deltaTime;
 		if (player2) p2.position += new Vector3(0f, j2, 0f) * jumpHeight * Time.deltaTime;
