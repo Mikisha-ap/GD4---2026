@@ -1,22 +1,22 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player1 : MonoBehaviour
+public class Player2 : MonoBehaviour
 {
-	[Header("Shooting")]
-	[SerializeField] private GameObject projectilePrefab;
-	[SerializeField] private Transform firePoint;
-	[SerializeField] private float projectileSpeed = 12f;
-	
-	[Header("Movement")]
 	[SerializeField] private float moveSpeed = 5f;
 	[SerializeField] private float jumpStep = 1f;
 	[SerializeField] private float rotateSpeed = 100f;
 	private Vector2 lookInput;
+
+	[SerializeField] private GameObject shielVisual;
+	private bool isShielding;
+
 	private Vector2 moveInput;
+	// Start is called once before the first execution of Update after the MonoBehaviour is created
+
 
 	// Update is called once per frame
-	private void Update()
+	void Update()
 	{
 		float yaw = lookInput.x * rotateSpeed * Time.deltaTime;
 		transform.Rotate(0f, yaw, 0f, Space.World);
@@ -41,11 +41,9 @@ public class Player1 : MonoBehaviour
 		transform.position += Vector3.up * jumpStep;
 	}
 
-	public void onShoot(InputAction.CallbackContext context)
+	public void OnShield(InputAction.CallbackContext context)
 	{
-		if(!context.performed) return;
-
-		var proj = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-		proj.GetComponent<Rigidbody>().linearVelocity = firePoint.forward * projectileSpeed;
+		isShielding = context.ReadValueAsButton();
+		shielVisual.SetActive(isShielding);
 	}
 }

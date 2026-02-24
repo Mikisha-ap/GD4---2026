@@ -32,6 +32,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "0a52e273-c839-4cc5-82be-b3e121b08e4f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -104,7 +113,7 @@
                 {
                     "name": "up",
                     "id": "418a815f-37c2-43c4-9325-a44459f5c73c",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -115,7 +124,7 @@
                 {
                     "name": "down",
                     "id": "a5d51c02-af63-4f86-a13b-617098b303d5",
-                    "path": "<Gamepad>/dpad/down",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -126,7 +135,7 @@
                 {
                     "name": "left",
                     "id": "159a4800-c643-47ea-92a9-060a4d561d40",
-                    "path": "<Gamepad>/dpad/left",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -137,7 +146,7 @@
                 {
                     "name": "right",
                     "id": "9053f422-37c5-4819-b617-01bc450e668e",
-                    "path": "<Gamepad>/dpad/right",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -177,6 +186,17 @@
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d4a877fe-c279-4c42-b028-236856389451",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Controller",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -210,6 +230,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Shield",
+                    "type": "Button",
+                    "id": "d7041346-ce6d-40b7-81db-81efdb4af83d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -282,7 +311,7 @@
                 {
                     "name": "up",
                     "id": "a401a29a-3486-4bc2-9465-590a3ea3efe5",
-                    "path": "<Gamepad>/dpad/up",
+                    "path": "<Gamepad>/leftStick/up",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -293,7 +322,7 @@
                 {
                     "name": "down",
                     "id": "231bf958-1b65-4705-99b5-c0e77f13a556",
-                    "path": "<Gamepad>/dpad/down",
+                    "path": "<Gamepad>/leftStick/down",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -304,7 +333,7 @@
                 {
                     "name": "left",
                     "id": "3c0463c3-1a30-43d6-beca-cabb93c2c321",
-                    "path": "<Gamepad>/dpad/left",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -315,7 +344,7 @@
                 {
                     "name": "right",
                     "id": "8910ead3-2b80-4fa4-93b6-90940808a64a",
-                    "path": "<Gamepad>/dpad/right",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Controller",
@@ -353,6 +382,17 @@
                     "processors": "",
                     "groups": ";Controller",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "118faf79-47cf-4afa-8def-423fd11f1d10",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Controller",
+                    "action": "Shield",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
